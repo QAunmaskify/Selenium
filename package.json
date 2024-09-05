@@ -1,0 +1,21 @@
+{
+  "name": "selenium-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "selenium-webdriver": "^4.24.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
