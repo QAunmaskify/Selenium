@@ -1,12 +1,19 @@
-import {Builder} from 'selenium-webdriver';
+import { Builder, By, Key } from "selenium-webdriver";
 
 async function example() {
-    const driver = await new Builder()
-    .forBrowser('chrome')
-    .build();
+  // Launch the chrome browser
+  const driver = await new Builder().forBrowser("chrome").build();
 
-    await driver.get('https://lambdatest.github.io/sample-todo-app/');
+  // Navigate to the application
+  await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
+  // Add todo task
+  await driver
+    .findElement(By.id("sampletodotext"))
+    .sendKeys("Last to-do", Key.ENTER);
+
+  // Close the browser
+  await driver.quit();
 }
 
-example()
+example();
